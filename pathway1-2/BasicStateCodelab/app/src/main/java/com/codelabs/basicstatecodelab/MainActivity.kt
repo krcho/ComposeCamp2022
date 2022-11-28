@@ -28,3 +28,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Preview
+@Composable
+fun Preview() {
+    BasicStateCodelabTheme {
+        WellnessScreen()
+    }
+}
