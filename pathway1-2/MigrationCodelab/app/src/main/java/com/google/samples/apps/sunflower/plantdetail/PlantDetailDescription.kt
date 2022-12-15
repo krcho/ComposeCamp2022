@@ -16,6 +16,7 @@
 
 package com.google.samples.apps.sunflower.plantdetail
 
+import android.content.res.Configuration
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import androidx.compose.foundation.layout.*
@@ -36,6 +37,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.text.HtmlCompat
 import androidx.core.widget.TextViewCompat
+import androidx.room.PrimaryKey
 import com.google.samples.apps.sunflower.R
 import com.google.samples.apps.sunflower.data.Plant
 import com.google.samples.apps.sunflower.viewmodels.PlantDetailViewModel
@@ -135,7 +137,7 @@ private fun PlantDescriptionPreview() {
     }
 }
 
-
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview
 @Composable
 fun PlantDetailDescriptionPreview() {
